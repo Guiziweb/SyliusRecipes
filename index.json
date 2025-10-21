@@ -1,0 +1,21 @@
+{
+    "recipes": {
+        "guiziweb/sylius-ai-platform-bundle": [
+            "1.0"
+        ]
+    },
+    "recipe-conflicts": [],
+    "versions": [],
+    "branch": "main",
+    "is_contrib": true,
+    "_links": {
+        "repository": "github.com/Guiziweb/SyliusRecipes",
+        "origin_template": "{package}:{version}@github.com/Guiziweb/SyliusRecipes:main",
+        "recipe_template": "https://raw.githubusercontent.com/Guiziweb/SyliusRecipes/flex/main/{package_dotted}.{version}.json",
+        "recipe_template_relative": "{package_dotted}.{version}.json"
+    },
+    "_readme": [
+        "This file is auto updated",
+        "Please do not edit manually"
+    ]
+}

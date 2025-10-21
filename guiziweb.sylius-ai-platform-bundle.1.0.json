@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "guiziweb/sylius-ai-platform-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Guiziweb\\SyliusAIPlatformBundle\\GuiziwebSyliusAIPlatformBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/guiziweb_sylius_ai_platform.yaml": {
+                    "contents": [
+                        "imports:",
+                        "    - { resource: \"@GuiziwebSyliusAIPlatformBundle/config/config.yaml\" }",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/guiziweb_sylius_ai_platform.yaml": {
+                    "contents": [
+                        "guiziweb_sylius_ai_platform:",
+                        "    resource: \"@GuiziwebSyliusAIPlatformBundle/config/routes.yaml\"",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "c19dac944267c569676ed63345f94c432bb37338"
+        }
+    }
+}
