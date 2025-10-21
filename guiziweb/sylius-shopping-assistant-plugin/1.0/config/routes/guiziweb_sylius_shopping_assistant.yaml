@@ -1,0 +1,2 @@
+guiziweb_sylius_shopping_assistant:
+    resource: "@GuiziwebSyliusShoppingAssistantPlugin/config/routes.yaml"
