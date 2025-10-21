@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "guiziweb/sylius-shopping-assistant-plugin": {
+            "manifest": {
+                "bundles": {
+                    "Guiziweb\\SyliusShoppingAssistantPlugin\\GuiziwebSyliusShoppingAssistantPlugin": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/guiziweb_sylius_shopping_assistant.yaml": {
+                    "contents": [
+                        "imports:",
+                        "    resource: '@GuiziwebSyliusShoppingAssistantPlugin/config/config.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/guiziweb_sylius_shopping_assistant.yaml": {
+                    "contents": [
+                        "guiziweb_sylius_shopping_assistant:",
+                        "    resource: \"@GuiziwebSyliusShoppingAssistantPlugin/config/routes.yaml\"",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "69ff9e5ed22d91a61de3d1c01b3f98e4c15c8a47"
+        }
+    }
+}
