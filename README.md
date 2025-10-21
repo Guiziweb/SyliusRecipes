@@ -24,6 +24,8 @@ Then install any Guiziweb bundle:
 
 ```bash
 composer require guiziweb/sylius-ai-platform-bundle
+# or
+composer require guiziweb/sylius-shopping-assistant-plugin
 ```
 
 The recipe will automatically configure:
@@ -34,6 +36,7 @@ The recipe will automatically configure:
 ## Available Recipes
 
 - `guiziweb/sylius-ai-platform-bundle` - AI Platform infrastructure bundle for Sylius
+- `guiziweb/sylius-shopping-assistant-plugin` - Shopping Assistant plugin with AI-powered chat for Sylius
 
 ## Contributing
 
