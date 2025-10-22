@@ -16,12 +16,14 @@
                         "content": "import '@vendor/guiziweb/sylius-shopping-assistant-plugin/assets/shop/entrypoint';",
                         "position": "after_target",
                         "target": "import './bootstrap.js';"
+                    },
+                    {
+                        "file": "package.json",
+                        "content": "    \"marked\": \"^15.0.4\",",
+                        "position": "after_target",
+                        "target": "  \"dependencies\": {"
                     }
-                ],
-                "composer-scripts": {
-                    "yarn add marked": "script",
-                    "yarn build": "script"
-                }
+                ]
             },
             "files": {
                 "config/packages/guiziweb_sylius_shopping_assistant.yaml": {
