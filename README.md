@@ -26,6 +26,8 @@ Then install any Guiziweb bundle:
 composer require guiziweb/sylius-ai-platform-bundle
 # or
 composer require guiziweb/sylius-shopping-assistant-plugin
+# or
+composer require guiziweb/sylius-agentic-commerce-protocol-plugin
 ```
 
 The recipe will automatically configure:
@@ -37,6 +39,7 @@ The recipe will automatically configure:
 
 - `guiziweb/sylius-ai-platform-bundle` - AI Platform infrastructure bundle for Sylius
 - `guiziweb/sylius-shopping-assistant-plugin` - Shopping Assistant plugin with AI-powered chat for Sylius
+- `guiziweb/sylius-agentic-commerce-protocol-plugin` - Agentic Commerce Protocol (ACP) for AI agent checkout integration
 
 ## Contributing
 

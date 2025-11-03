@@ -3,6 +3,9 @@
         "guiziweb/sylius-ai-platform-bundle": [
             "1.0"
         ],
+        "guiziweb/sylius-agentic-commerce-protocol-plugin": [
+            "1.0"
+        ],
         "guiziweb/sylius-shopping-assistant-plugin": [
             "1.0"
         ]
