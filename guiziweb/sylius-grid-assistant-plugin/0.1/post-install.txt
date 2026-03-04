@@ -1,0 +1,11 @@
+  <bg=blue;fg=white>                                                    </>
+  <bg=blue;fg=white>  Guiziweb SyliusGridAssistantPlugin installed!     </>
+  <bg=blue;fg=white>                                                    </>
+
+  Add your API key in <comment>.env.local</>:
+     <comment>GEMINI_API_KEY=your_api_key_here</>
+
+  To use a different AI provider, edit <comment>config/packages/guiziweb_grid_assistant.yaml</>
+  and uncomment the desired platform (OpenAI, Anthropic).
+
+  Get a free Gemini API key at <comment>https://aistudio.google.com/</>

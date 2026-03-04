@@ -1,6 +1,6 @@
 # Guiziweb Sylius Recipes
 
-Symfony Flex recipes for Guiziweb Sylius bundles.
+Symfony Flex recipes for Guiziweb Sylius plugins.
 
 ## Usage
 
@@ -11,8 +11,7 @@ Add this endpoint to your project's `composer.json`:
     "extra": {
         "symfony": {
             "endpoint": [
-                "https://api.github.com/repos/Guiziweb/SyliusRecipes/contents/index.json?ref=main",
-                "https://api.github.com/repos/Sylius/SyliusRecipes/contents/index.json?ref=flex/main",
+                "https://api.github.com/repos/Guiziweb/SyliusRecipes/contents/index.json?ref=flex/main",
                 "flex://defaults"
             ]
         }
@@ -20,27 +19,22 @@ Add this endpoint to your project's `composer.json`:
 }
 ```
 
-Then install any Guiziweb bundle:
+Then install any Guiziweb plugin:
 
 ```bash
-composer require guiziweb/sylius-ai-platform-bundle
-# or
-composer require guiziweb/sylius-shopping-assistant-plugin
-# or
-composer require guiziweb/sylius-agentic-commerce-protocol-plugin
+composer require guiziweb/sylius-grid-assistant-plugin
 ```
 
 The recipe will automatically configure:
 - Bundle registration in `config/bundles.php`
 - Package configuration in `config/packages/`
 - Routes in `config/routes/`
+- Environment variables in `.env`
 
 ## Available Recipes
 
-- `guiziweb/sylius-ai-platform-bundle` - AI Platform infrastructure bundle for Sylius
-- `guiziweb/sylius-shopping-assistant-plugin` - Shopping Assistant plugin with AI-powered chat for Sylius
-- `guiziweb/sylius-agentic-commerce-protocol-plugin` - Agentic Commerce Protocol (ACP) for AI agent checkout integration
+- `guiziweb/sylius-grid-assistant-plugin` - AI-powered natural language filtering for Sylius grids
 
 ## Contributing
 
-To add a new recipe, create a PR with the recipe structure in the appropriate directory.
+To add a new recipe, add the recipe structure in the appropriate directory and push to `main`. The `flex/main` branch is updated automatically.

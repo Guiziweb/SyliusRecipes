@@ -1,6 +1,6 @@
 {
     "bundles": {
-        "Guiziweb\\SyliusAgenticCommerceProtocolPlugin\\GuiziwebSyliusAgenticCommerceProtocolPlugin": [
+        "Guiziweb\\SyliusGridAssistantPlugin\\GuiziwebSyliusGridAssistantPlugin": [
             "all"
         ]
     },
