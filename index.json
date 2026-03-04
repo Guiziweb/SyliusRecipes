@@ -1,13 +1,8 @@
 {
+    "aliases": [],
     "recipes": {
-        "guiziweb/sylius-ai-platform-bundle": [
-            "1.0"
-        ],
-        "guiziweb/sylius-agentic-commerce-protocol-plugin": [
-            "1.0"
-        ],
-        "guiziweb/sylius-shopping-assistant-plugin": [
-            "1.0"
+        "guiziweb/sylius-grid-assistant-plugin": [
+            "0.1"
         ]
     },
     "recipe-conflicts": [],
@@ -18,10 +13,8 @@
         "repository": "github.com/Guiziweb/SyliusRecipes",
         "origin_template": "{package}:{version}@github.com/Guiziweb/SyliusRecipes:main",
         "recipe_template": "https://raw.githubusercontent.com/Guiziweb/SyliusRecipes/flex/main/{package_dotted}.{version}.json",
-        "recipe_template_relative": "{package_dotted}.{version}.json"
-    },
-    "_readme": [
-        "This file is auto updated",
-        "Please do not edit manually"
-    ]
+        "recipe_template_relative": "{package_dotted}.{version}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/Guiziweb/SyliusRecipes/flex/main/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
+    }
 }
