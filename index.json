@@ -3,6 +3,9 @@
     "recipes": {
         "guiziweb/sylius-grid-assistant-plugin": [
             "0.1"
+        ],
+        "guiziweb/sylius-test-plugin": [
+            "0.1"
         ]
     },
     "recipe-conflicts": [],
