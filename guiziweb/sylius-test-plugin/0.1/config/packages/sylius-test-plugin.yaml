@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@GuiziwebSyliusTestPlugin/config/config.yaml" }

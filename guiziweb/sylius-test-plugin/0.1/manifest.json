@@ -1,0 +1,10 @@
+{
+  "bundles": {
+    "Guiziweb\\SyliusTestPlugin\\GuiziwebSyliusTestPlugin": [
+      "all"
+    ]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  }
+}
