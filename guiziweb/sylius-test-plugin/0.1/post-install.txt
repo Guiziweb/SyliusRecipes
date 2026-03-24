@@ -1,0 +1,1 @@
+GuiziwebSyliusTestPlugin installed!
