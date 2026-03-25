@@ -1,0 +1,1 @@
+GuiziwebSyliusSchedulerPlugin installed!

@@ -1,0 +1,5 @@
+guiziweb_scheduler_admin:
+    resource: "@GuiziwebSyliusSchedulerPlugin/config/routes/admin.yaml"
+
+guiziweb_scheduler_shop:
+    resource: "@GuiziwebSyliusSchedulerPlugin/config/routes/shop.yaml"
