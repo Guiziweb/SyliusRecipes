@@ -6,7 +6,7 @@
 
   <comment>1. Install Symfony AI bundle and a provider bridge</>
 
-     <comment>composer require symfony/ai-bundle symfony/ai-openai-platform</>
+     <comment>composer require symfony/ai-bundle symfony/ai-open-ai-platform</>
 
      Other bridges available: symfony/ai-gemini-platform,
      symfony/ai-anthropic-platform, symfony/ai-mistral-platform.
