@@ -1,11 +1,28 @@
-  <bg=blue;fg=white>                                                    </>
-  <bg=blue;fg=white>  Guiziweb SyliusGridAssistantPlugin installed!     </>
-  <bg=blue;fg=white>                                                    </>
+  <bg=blue;fg=white>                                                              </>
+  <bg=blue;fg=white>  Guiziweb SyliusGridAssistantPlugin installed!               </>
+  <bg=blue;fg=white>                                                              </>
 
-  Add your API key in <comment>.env.local</>:
-     <comment>GEMINI_API_KEY=your_api_key_here</>
+  To enable the AI assistant, complete the setup in 3 steps:
 
-  To use a different AI provider, edit <comment>config/packages/guiziweb_grid_assistant.yaml</>
-  and uncomment the desired platform (OpenAI, Anthropic).
+  <comment>1. Install Symfony AI bundle and a provider bridge</>
 
-  Get a free Gemini API key at <comment>https://aistudio.google.com/</>
+     <comment>composer require symfony/ai-bundle symfony/ai-openai-platform</>
+
+     Other bridges available: symfony/ai-gemini-platform,
+     symfony/ai-anthropic-platform, symfony/ai-mistral-platform.
+
+  <comment>2. Configure your provider in config/packages/ai.yaml</>
+
+     <comment>ai:
+         platform:
+             openai:
+                 api_key: '%env(OPENAI_API_KEY)%'</>
+
+     Then add the key to <comment>.env.local</>:
+
+     <comment>OPENAI_API_KEY=sk-...</>
+
+  <comment>3. Enable the assistant on the grids you want</>
+
+     Edit <comment>config/packages/guiziweb_sylius_grid_assistant.yaml</>
+     and add the grid codes under <comment>enabled_grids</>.

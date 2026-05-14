@@ -1,0 +1,10 @@
+imports:
+    - { resource: "@GuiziwebSyliusGridAssistantPlugin/config/config.yaml" }
+
+guiziweb_sylius_grid_assistant:
+    enabled_grids:
+        # List the grid codes where the AI assistant should appear.
+        # Examples:
+        # - sylius_admin_order
+        # - sylius_admin_product
+        # - sylius_admin_customer

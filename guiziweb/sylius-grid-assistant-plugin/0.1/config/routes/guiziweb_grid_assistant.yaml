@@ -1,3 +1,0 @@
-guiziweb_grid_assistant:
-    resource: "@GuiziwebSyliusGridAssistantPlugin/config/routes.yaml"
-    prefix: /admin
