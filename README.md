@@ -34,6 +34,7 @@ The recipe will automatically configure:
 ## Available Recipes
 
 - `guiziweb/sylius-grid-assistant-plugin` - AI-powered natural language filtering for Sylius grids
+- `guiziweb/sylius-token-plugin` - Prepaid token wallet: customers buy token packs and spend them on services
 
 ## Contributing
 
