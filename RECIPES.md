@@ -5,3 +5,4 @@ Additional recipes can be found on the [Main Recipes Repository](https://github.
 | Package | Latest Recipe |
 | --- | --- |
 | [guiziweb/sylius-grid-assistant-plugin](https://packagist.org/packages/guiziweb/sylius-grid-assistant-plugin) | [0.1](../../../tree/main/guiziweb/sylius-grid-assistant-plugin/0.1) |
+| [guiziweb/sylius-token-plugin](https://packagist.org/packages/guiziweb/sylius-token-plugin) | [0.1](../../../tree/main/guiziweb/sylius-token-plugin/0.1) |

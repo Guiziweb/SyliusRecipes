@@ -1,0 +1,75 @@
+{
+    "manifests": {
+        "guiziweb/sylius-token-plugin": {
+            "manifest": {
+                "bundles": {
+                    "Guiziweb\\SyliusTokenPlugin\\GuiziwebSyliusTokenPlugin": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "post-install-output": [
+                    "  <bg=blue;fg=white>                                                              </>",
+                    "  <bg=blue;fg=white>  Guiziweb SyliusTokenPlugin installed!                       </>",
+                    "  <bg=blue;fg=white>                                                              </>",
+                    "",
+                    "  Two steps remain, they cannot be automated:",
+                    "",
+                    "  <comment>1. Let your product variants grant tokens</>",
+                    "",
+                    "     A pack grants tokens through a field carried by your own entity, so the",
+                    "     trait has to be applied in <comment>src/Entity/Product/ProductVariant.php</>:",
+                    "",
+                    "     <comment>use Guiziweb\\SyliusTokenPlugin\\Model\\TokenPackInterface;",
+                    "     use Guiziweb\\SyliusTokenPlugin\\Model\\TokenPackTrait;",
+                    "",
+                    "     class ProductVariant extends BaseProductVariant implements TokenPackInterface",
+                    "     {",
+                    "         use TokenPackTrait;",
+                    "     }</>",
+                    "",
+                    "     Without it, creating a token pack fails with",
+                    "     <comment>Apply TokenPackTrait to your ProductVariant entity.</>",
+                    "",
+                    "  <comment>2. Run the migrations</>",
+                    "",
+                    "     <comment>bin/console doctrine:migrations:migrate</>",
+                    "",
+                    "     They target MySQL, MariaDB and PostgreSQL.",
+                    "",
+                    "  A <comment>Tokens</> section then appears in the admin menu, right below Catalog:",
+                    "  create a pack under <comment>Products</> and set what your actions cost under",
+                    "  <comment>Pricing</>.",
+                    "",
+                    "  Documentation: <comment>https://github.com/Guiziweb/GuiziwebSyliusTokenPlugin/tree/main/docs</>"
+                ]
+            },
+            "files": {
+                "config/packages/guiziweb_sylius_token.yaml": {
+                    "contents": [
+                        "imports:",
+                        "    - { resource: \"@GuiziwebSyliusTokenPlugin/config/config.yaml\" }"
+                    ],
+                    "executable": false
+                },
+                "config/routes/guiziweb_sylius_token.yaml": {
+                    "contents": [
+                        "guiziweb_sylius_token_admin:",
+                        "    resource: \"@GuiziwebSyliusTokenPlugin/config/routes/admin.yaml\"",
+                        "    prefix: /admin",
+                        "",
+                        "guiziweb_sylius_token_shop:",
+                        "    resource: \"@GuiziwebSyliusTokenPlugin/config/routes/shop.yaml\"",
+                        "    prefix: /{_locale}",
+                        "    requirements:",
+                        "        _locale: ^[A-Za-z]{2,4}(_([A-Za-z]{4}|[0-9]{3}))?(_([A-Za-z]{2}|[0-9]{3}))?$"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "b3e2f5f353714bb6ddaf95e7ef5ee8c3d78606f6"
+        }
+    }
+}
