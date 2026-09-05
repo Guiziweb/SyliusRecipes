@@ -7,4 +7,5 @@ jobs:
         uses: symfony/recipes/.github/workflows/callable-flex-update.yml@main
         with:
             contrib: true
-        secrets: inherit
+        secrets:
+            token: ${{ secrets.GITHUB_TOKEN }}
